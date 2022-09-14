@@ -1,0 +1,95 @@
+@import "../../Scss/Variables.scss";
+.planning-cards {
+  display: flex;
+  margin: 78px -40px 0;
+  @include breakpoint-down(xl) {
+    max-width: 895px;
+    margin-top: 40px;
+  }
+  @include breakpoint-down(lg) {
+    max-width: 762px;
+    margin-top: 30px;
+  }
+  @include breakpoint-down(md) {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  @include breakpoint-down(sm) {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .planningcard {
+    background: linear-gradient(235.44deg, #0f0e13 70.98%, #000000 136.15%);
+    border: 1px solid #343142;
+    border-radius: 20px;
+    padding: 40px 30px 32px 30px;
+    text-align: start;
+    @include breakpoint-down(xl) {
+      padding: 25px 10px 23px 20px;
+    }
+    @include breakpoint-down(lg) {
+      padding: 15px 10px;
+    }
+    @include breakpoint-down(md) {
+      padding: 30px 20px;
+      margin-bottom: 15px;
+    }
+    @include breakpoint-down(sm) {
+      padding: 20px 15px;
+      margin-bottom: 15px;
+    }
+  }
+  .planning-card-img {
+    margin-bottom: 15px;
+  }
+  .planningcard-title {
+    font-family: $Spartan-font;
+    font-weight: $font-weight-700;
+    font-size: 20px;
+    line-height: 22px;
+    color: $white-color;
+    @include breakpoint-down(xl) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    @include breakpoint-down(lg) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    @include breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    @include breakpoint-down(sm) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+  .planningcard-para {
+    font-family: $Montserrat-font;
+    font-weight: $font-weight-400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white-color;
+    max-width: 300px;
+    margin-top: 15px;
+    @include breakpoint-down(xl) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    @include breakpoint-down(lg) {
+      font-size: 12px;
+      line-height: 22px;
+      margin-top: 10px;
+    }
+    @include breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 26px;
+      margin-top: 8px;
+    }
+    @include breakpoint-down(sm) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import "./Scss/Variables.scss";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $background-color;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include breakpoint-down(xl) {
+    max-width: 962px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @include breakpoint-down(lg) {
+    max-width: 785px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @include breakpoint-down(md) {
+    max-width: 685px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @include breakpoint-down(sm) {
+    max-width: 532px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+h3 {
+  font-family: $Spartan-font;
+  font-weight: $font-weight-700;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  @include breakpoint-down(xl) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  @include breakpoint-down(lg) {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  @include breakpoint-down(md) {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  @include breakpoint-down(sm) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+p {
+  color: aliceblue;
+  font-family: $Montserrat-font;
+  font-weight: $font-weight-400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $white-color;
+  text-align: initial;
+  @include breakpoint-down(xl) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  @include breakpoint-down(lg) {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  @include breakpoint-down(md) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  @include breakpoint-down(sm) {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
