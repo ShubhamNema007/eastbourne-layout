@@ -1,0 +1,199 @@
+@import "../Scss/Variables.scss";
+.lookforward {
+  padding-top: 105px;
+  @include breakpoint-down(xl) {
+    padding: 0;
+  }
+  @include breakpoint-down(lg) {
+    padding-top: 25px;
+  }
+  @include breakpoint-down(md) {
+    padding: 0;
+  }
+  @include breakpoint-down(sm) {
+    padding-top: 0;
+  }
+  .look-forward-main {
+    background: #0f0e13;
+    border-radius: 255px 255px 14px 255px;
+    display: flex;
+    align-items: center;
+    text-align: initial;
+    height: 510px;
+    position: relative;
+    @include breakpoint-down(xl) {
+      height: 100%;
+    }
+    @include breakpoint-down(md) {
+      background: #000000;
+      height: 100%;
+    }
+    @include breakpoint-down(sm) {
+      flex-direction: column-reverse;
+      background: #000000;
+      height: 100%;
+    }
+    .look-forward-content {
+      margin-left: 162px;
+      @include breakpoint-down(xl) {
+        margin-left: 100px;
+      }
+      @include breakpoint-down(lg) {
+        margin-left: 75px;
+      }
+      @include breakpoint-down(md) {
+        margin-left: 50px;
+      }
+      @include breakpoint-down(sm) {
+        margin-left: 0;
+        text-align: center;
+      }
+      .look-forward-head {
+        text-align: initial;
+        margin-top: 15px;
+        @include breakpoint-down(sm) {
+          text-align: center;
+        }
+      }
+      .lookforward-btn {
+        margin-top: 36px;
+        @include breakpoint-down(xl) {
+          margin-top: 25px;
+        }
+        @include breakpoint-down(lg) {
+          margin-top: 20px;
+        }
+        @include breakpoint-down(sm) {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  .look-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include breakpoint-down(xl) {
+      position: static;
+    }
+    @include breakpoint-down(lg) {
+      position: static;
+    }
+    @include breakpoint-down(md) {
+      position: static;
+    }
+    @include breakpoint-down(sm) {
+      position: static;
+    }
+    img.lab-image {
+      border-radius: 255px 255px 0 0;
+      max-width: 100%;
+
+      @include breakpoint-down(md) {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      @include breakpoint-down(sm) {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .look-forward-details {
+    display: flex;
+    padding-top: 174px;
+    align-items: center;
+    margin: 0 -35px;
+    @include breakpoint-down(xl) {
+      padding-top: 75px;
+    }
+    @include breakpoint-down(lg) {
+      padding-top: 75px;
+    }
+    @include breakpoint-down(md) {
+      padding-top: 50px;
+    }
+    @include breakpoint-down(sm) {
+      padding-top: 30px;
+      flex-direction: column;
+      margin: 0;
+    }
+    .laptop-img {
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 50%;
+      padding: 0 38px;
+      text-align: center;
+      @include breakpoint-down(sm) {
+        width: 100%;
+        max-width: 100%;
+        padding: 0%;
+      }
+
+      img.laptop-image {
+        border-radius: 255px 255px 0 0;
+        max-width: 100%;
+        text-align: center;
+
+        @include breakpoint-down(sm) {
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .look-forward-description {
+      flex: 0 0 50;
+      width: 50%;
+      max-width: 50%;
+      padding: 0 38px;
+      text-align: initial;
+      @include breakpoint-down(xl) {
+        padding-left: 65px;
+      }
+      @include breakpoint-down(lg) {
+        padding-left: 30px;
+      }
+      @include breakpoint-down(md) {
+        padding-left: 25px;
+      }
+      @include breakpoint-down(sm) {
+        padding-left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+      .look-forward-head {
+        text-align: initial;
+        margin-top: 15px;
+      }
+      .look-forward-para {
+        max-width: 556px;
+        margin-top: 30px;
+        @include breakpoint-down(xl) {
+          margin-top: 15px;
+        }
+        @include breakpoint-down(lg) {
+          margin-top: 15px;
+        }
+        @include breakpoint-down(md) {
+          margin-top: 10px;
+        }
+        @include breakpoint-down(sm) {
+          margin-top: 10px;
+        }
+      }
+      .lookforward-btn {
+        margin-top: 30px;
+        @include breakpoint-down(xl) {
+          margin-top: 20px;
+        }
+        @include breakpoint-down(lg) {
+          margin-top: 20px;
+        }
+        @include breakpoint-down(sm) {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

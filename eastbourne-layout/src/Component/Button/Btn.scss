@@ -1,0 +1,65 @@
+@import "../../Scss/Variables.scss";
+.eastbournebtn {
+  font-family: $Montserrat-font;
+  font-weight: $font-weight-700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white-color;
+  padding: 14px 18px;
+  background: $blue-color;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+  transform: translate(0%, 0%);
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all 0.35s;
+  @include breakpoint-down(xl) {
+    font-size: 12px;
+    padding: 12px 15px;
+  }
+  @include breakpoint-down(lg) {
+    font-size: 12px;
+    line-height: 13px;
+    padding: 12px 15px;
+  }
+  @include breakpoint-down(sm) {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 6px;
+  }
+  @include breakpoint-down(md) {
+    font-size: 8px;
+    line-height: 16px;
+    padding: 11px 12px;
+  }
+}
+.eastbournebtn:before,
+.eastbournebtn:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: #ffffff;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.eastbournebtn:before {
+  opacity: 0.5;
+}
+
+.eastbournebtn:after {
+  transition-delay: 0.2s;
+}
+
+.eastbournebtn:hover {
+  color: #2952e3;
+}
+
+.eastbournebtn:hover:before,
+.eastbournebtn:hover:after {
+  top: 0;
+}

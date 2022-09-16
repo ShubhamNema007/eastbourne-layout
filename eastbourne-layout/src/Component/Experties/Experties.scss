@@ -1,0 +1,156 @@
+@import "../../Scss/Variables.scss";
+@import "../../Scss/Mixin.scss";
+.experties-section {
+  padding: 140px 0 105px;
+  @include breakpoint-down(xl) {
+    padding: 65px 0 85px;
+  }
+  @include breakpoint-down(lg) {
+    padding: 65px 0 40px;
+  }
+  @include breakpoint-down(md) {
+    padding: 50px 0 50px;
+  }
+  @include breakpoint-down(sm) {
+    padding: 40px 0 105px;
+  }
+  .experties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .experties-span {
+    margin-bottom: 15px;
+  }
+  .experties-head {
+    max-width: 736px;
+    @include breakpoint-down(xl) {
+      text-align: center;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px -20px 0;
+    @include breakpoint-down(xl) {
+      margin-top: 60px;
+    }
+    @include breakpoint-down(lg) {
+      margin-top: 55px;
+    }
+    @include breakpoint-down(md) {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    @include breakpoint-down(sm) {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    .col-md {
+      flex: 0 0 33.33%;
+      width: 33.33%;
+      max-width: 33.33%;
+      padding: 30px 20px;
+      @include breakpoint-down(lg) {
+        padding: 20px 20px;
+      }
+      @include breakpoint-down(md) {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 20px;
+      }
+      @include breakpoint-down(sm) {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 20px;
+      }
+      .card-size {
+        height: 100%;
+        background: linear-gradient(246.6deg, #0f0e13 0.46%, #222028 121.38%);
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .col-md-xl {
+    flex: 0 0 66.66%;
+    width: 66.66%;
+    max-width: 66.66%;
+    padding: 30px 20px;
+    @include breakpoint-down(lg) {
+      padding: 20px 20px;
+    }
+    @include breakpoint-down(md) {
+      width: 100%;
+      max-width: 100%;
+      padding: 15px 20px;
+    }
+    @include breakpoint-down(sm) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+.experties-image {
+  background: #1f1f1f;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  @include breakpoint-down(lg) {
+    height: auto;
+  }
+
+  @include breakpoint-down(sm) {
+    max-width: 100%;
+  }
+  .card-section-image {
+    border-radius: 20px;
+    height: 100%;
+    @include breakpoint-down(xl) {
+      max-width: 175px;
+    }
+  }
+  .card-head {
+    text-align: initial;
+    margin-bottom: 30px;
+    line-height: 56px;
+    font-size: 38px;
+    @include breakpoint-down(xl) {
+      margin-bottom: 15px;
+      font-size: 30px;
+      line-height: 45px;
+    }
+    @include breakpoint-down(lg) {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+    @include breakpoint-down(md) {
+      margin-bottom: 15px;
+      line-height: 35px;
+      font-size: 25px;
+    }
+    @include breakpoint-down(sm) {
+      margin-bottom: 15px;
+      line-height: 35px;
+      font-size: 25px;
+    }
+  }
+  .experties-content {
+    text-align: initial;
+    margin-left: 70px;
+    @include breakpoint-down(lg) {
+      margin-left: 20px;
+    }
+    @include breakpoint-down(md) {
+      margin-left: 0;
+    }
+    @include breakpoint-down(sm) {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import "../../Scss/Variables.scss";
+.planning-section {
+  padding-top: 140px;
+  @include breakpoint-down(xl) {
+    padding-top: 65px;
+  }
+  @include breakpoint-down(lg) {
+    padding-top: 65px;
+  }
+  @include breakpoint-down(md) {
+    padding-top: 40px;
+  }
+  @include breakpoint-down(sm) {
+    padding-top: 45px;
+  }
+  .planning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0f0e13;
+    padding: 80px 50px 50px;
+    border-radius: 20px;
+    @include breakpoint-down(xl) {
+      padding: 50px 40px 45px;
+    }
+    @include breakpoint-down(lg) {
+      padding: 50px 25px 40px;
+    }
+    @include breakpoint-down(md) {
+      padding: 45px 10px 25px;
+    }
+    @include breakpoint-down(sm) {
+      padding: 40px 30px 20px;
+    }
+    .planning-details {
+      display: flex;
+      align-items: center;
+      @include breakpoint-down(sm) {
+        flex-direction: column;
+      }
+    }
+    .planning-scss {
+      display: flex;
+      align-items: baseline;
+      flex-direction: column;
+      @include breakpoint-down(sm) {
+        align-items: center;
+      }
+    }
+    .planning-badge {
+      margin-bottom: 15px;
+      @include breakpoint-down(lg) {
+        margin-bottom: 12px;
+      }
+    }
+    .planning-head {
+      margin-bottom: 20px;
+      @include breakpoint-down(xl) {
+        margin-bottom: 12px;
+      }
+      @include breakpoint-down(lg) {
+        margin-bottom: 10px;
+      }
+      @include breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
+      @include breakpoint-down(sm) {
+        margin-bottom: 10px;
+      }
+    }
+    .planning-para {
+      font-family: $Montserrat-font;
+      font-weight: $font-weight-400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $white-color;
+      @include breakpoint-down(xl) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      @include breakpoint-down(lg) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      @include breakpoint-down(md) {
+        font-size: 12px;
+        line-height: 25px;
+      }
+      @include breakpoint-down(sm) {
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
+    }
+    .planning-btn {
+      margin-left: 130px;
+      @include breakpoint-down(xl) {
+        margin-left: 25px;
+      }
+      @include breakpoint-down(lg) {
+        margin-left: 25px;
+      }
+      @include breakpoint-down(md) {
+        margin-left: 0;
+      }
+      @include breakpoint-down(sm) {
+        margin-left: 0;
+      }
+    }
+    .planning-content {
+      flex: 0 0 33.33%;
+      width: 33.33%;
+      max-width: 33.33%;
+      padding: 0 15px;
+      @include breakpoint-down(lg) {
+        padding: 0 10px;
+      }
+      @include breakpoint-down(md) {
+        width: 100%;
+        max-width: 100%;
+      }
+      @include breakpoint-down(sm) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

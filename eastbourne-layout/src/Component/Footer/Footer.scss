@@ -1,0 +1,220 @@
+@import "../../Scss/Variables.scss";
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  align-items: center;
+  @include breakpoint-down(lg) {
+    padding-top: 60px;
+  }
+  @include breakpoint-down(md) {
+    padding-top: 60px;
+    align-items: flex-start;
+  }
+  @include breakpoint-down(sm) {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .footer-logo {
+    max-width: 195px;
+    @include breakpoint-down(md) {
+      max-width: 145px;
+    }
+    @include breakpoint-down(sm) {
+      max-width: 175px;
+    }
+  }
+  .email-details {
+    text-align: initial;
+    margin-top: 32px;
+    @include breakpoint-down(lg) {
+      margin-top: 25px;
+    }
+    @include breakpoint-down(md) {
+      margin-top: 20px;
+    }
+    @include breakpoint-down(sm) {
+      margin-top: 20px;
+    }
+    .email {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      @include breakpoint-down(lg) {
+        margin-bottom: 12px;
+      }
+      @include breakpoint-down(sm) {
+        margin-bottom: 10px;
+      }
+      .contact-number {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: $white-color;
+        transition: 0.3s;
+        @include breakpoint-down(lg) {
+          font-size: 14px;
+        }
+        @include breakpoint-down(md) {
+          font-size: 12px;
+          line-height: 14px;
+        }
+        @include breakpoint-down(sm) {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      .contact-number:hover {
+        color: $blue-color;
+      }
+    }
+  }
+  .quick-menu {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+    @include breakpoint-down(lg) {
+      column-gap: 50px;
+    }
+    @include breakpoint-down(md) {
+      column-gap: 35px;
+    }
+    @include breakpoint-down(sm) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .quick {
+      text-align: initial;
+      .quick-links-span {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: $white-color;
+        transition: 0.3s;
+        @include breakpoint-down(sm) {
+          font-size: 14px;
+        }
+      }
+      .quick-links-span:hover {
+        color: $blue-color;
+      }
+      .quick-links {
+        display: flex;
+        text-align: initial;
+        column-gap: 50px;
+        margin-top: 30px;
+        @include breakpoint-down(lg) {
+          column-gap: 35px;
+          margin-top: 20px;
+        }
+        @include breakpoint-down(md) {
+          column-gap: 15px;
+          margin-top: 20px;
+        }
+        @include breakpoint-down(sm) {
+          margin-top: 15px;
+        }
+        li.quick-links-menu {
+          margin-bottom: 15px;
+          .quick-link-a {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            color: $white-color;
+            text-decoration: none;
+            transition: 0.3s;
+            @include breakpoint-down(lg) {
+              font-size: 14px;
+            }
+            @include breakpoint-down(md) {
+              font-size: 12px;
+              line-height: 14px;
+            }
+            @include breakpoint-down(sm) {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          .quick-link-a:hover {
+            color: $blue-color;
+          }
+        }
+      }
+    }
+  }
+}
+.footer-border {
+  border: 2px solid #202020;
+  @include breakpoint-down(sm) {
+    border: 1px solid #202020;
+  }
+}
+.copyrigth-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 30px;
+  @include breakpoint-down(lg) {
+  }
+  @include breakpoint-down(sm) {
+    margin: 15px 0 10px;
+  }
+  .copyrigth {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #a5a5a5;
+    @include breakpoint-down(lg) {
+      font-size: 14px;
+    }
+    @include breakpoint-down(md) {
+      font-size: 12px;
+    }
+    @include breakpoint-down(sm) {
+      font-size: 9px;
+    }
+  }
+  .terms-condition-menu {
+    display: flex;
+    column-gap: 50px;
+    @include breakpoint-down(lg) {
+      column-gap: 40px;
+    }
+    @include breakpoint-down(md) {
+      column-gap: 35px;
+    }
+    @include breakpoint-down(sm) {
+      column-gap: 15px;
+      align-items: center;
+    }
+    .terms-condition {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: $white-color;
+      transition: 0.3s;
+      @include breakpoint-down(lg) {
+        font-size: 14px;
+      }
+      @include breakpoint-down(md) {
+        font-size: 12px;
+      }
+      @include breakpoint-down(sm) {
+        font-size: 9px;
+      }
+    }
+    .terms-condition:hover {
+      color: $blue-color;
+    }
+  }
+}
